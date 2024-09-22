@@ -1,0 +1,259 @@
+html, body, header, section, footer {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px; /* Set the maximum height for the logo */
+  margin-right: 0; /* Add some space between the logo and shop name */
+  border-radius: 50%;
+}
+
+.shop-name-container {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.shop-name {
+  font-size: 22px;
+  color: #fff; /* Customize the color of the shop name */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.wishlist-cart {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.wishlist-cart .wishlist,
+.wishlist-cart .cart {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.search-bar input[type=text] {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.parallax-section {
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.parallax-section h1 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+.parallax-section h2 {
+  font-size: 42px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.parallax-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.parallax-section.section1 {
+  background-image: url("../img/path-to-image-1.jpeg");
+}
+.parallax-section.section3 {
+  background-image: url("../imagefolder/background-image-2.jpg");
+}
+
+.normal-section {
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.normal-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.normal-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Styling for the employee container */
+.employee-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.employee {
+  width: 300px; /* Fixed width for each employee container */
+  text-align: center;
+}
+.employee img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Rounded image */
+  margin-bottom: 10px;
+}
+.employee h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.employee p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+.employee .description {
+  text-align: justify;
+}
+
+#section1 {
+  background-image: url("../img/path-to-image-1.jpeg");
+}
+
+#section3 {
+  background-image: url("../img/path-to-image-2.jpeg");
+}
+
+/* Styling for the food containers in the menu section */
+.food-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.food-item {
+  width: 250px; /* Fixed width for the food item container */
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  /* Additional styles for the "Add to Cart" button */
+}
+.food-item img {
+  max-width: 100%;
+  height: 12rem;
+  width: 14rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.food-item h3 {
+  font-size: 18px;
+  color: rgb(48, 48, 48);
+  margin-bottom: 5px;
+}
+.food-item p {
+  font-size: 16px;
+  color: #555;
+}
+.food-item .add-to-cart-btn {
+  background-color: #ff6b6b; /* Customize button color */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.food-item .add-to-cart-btn:hover {
+  background-color: #ff4747; /* Customize button color on hover */
+}
+
+/* Styling for the contact container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-item {
+  width: 250px; /* Fixed width for each contact item container */
+  text-align: center;
+}
+.contact-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contact-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+.button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #ff3838;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}/*# sourceMappingURL=styles.css.map */
